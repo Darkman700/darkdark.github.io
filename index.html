@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkMan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://www.wallpaperflare.com/static/303/266/369/hacking-anonymous-logo-wallpaper.jpg'); /* Arka plan fotoğrafı buraya eklenmeli */
+            background-size: cover;
+            background-position: center;
+            perspective: 1000px; /* 3D etkisi için perspektif ayarı */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .panel {
+            background-color: rgba(17, 20, 17, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            width: 300px;
+            transform: rotateY(15deg); /* 3D döndürme efekti */
+            transition: transform 0.5s;
+            text-align: center; /* İçeriği ortalamak için */
+        }
+
+        .panel:hover {
+            transform: rotateY(0deg); /* Hover efekti */
+        }
+
+        h1 {
+            color: #11cc1b;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #a88d8d;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #0d65c4;
+            border: none;
+            border-radius: 5px;
+            color: rgb(37, 23, 21);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #18cf4f;
+        }
+
+        .cover {
+            width: 60%; /* Kapak fotoğrafı boyutu */
+            margin-bottom: 5px; /* Kapak ile başlık arasında boşluk */
+            border-radius: 120px; /* Kenarları yuvarla */
+        }
+
+        .giris-button {
+            background-color: #e01e10; /* Arka plan rengi */
+            color: rgb(0, 0, 0); /* Yazı rengi */
+            border: none; /* Kenarlık yok */
+            border-radius: 5px; /* Kenarları yuvarla */
+            padding: 10px 20px; /* İçerik alanı */
+            cursor: pointer; /* Fare işaretçisi */
+            font-size: 16px; /* Yazı boyutu */
+            transition: background-color 0.3s; /* Geçiş efekti */
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://mp3indirdur.life/Kayra-Hikaye-Bitti-Coktan-262164?dinle=1" type="audio/mpeg"> <!-- Buraya müzik dosyanızın URL'sini ekleyin -->
+        Tarayıcınız ses oynatmayı desteklemiyor.
+    </audio>
+
+    <div class="container">
+        <div class="panel">
+            <img src="https://img.favpng.com/0/12/22/anonymous-logo-security-hacker-png-favpng-RD4hNne33zSwgVcw19581m7V3_t.jpg" class="cover"> <!-- Kapak fotoğrafı buraya eklenmeli -->
+            
+            <h1>𝐃𝐚𝐫𝐤𝐌𝐚𝐧 👑 </h1>
+            
+            <button class="giris-button" onclick="girisYap()"><strong>TAMAM</strong></button>
+        </div>
+    </div>
+    <script>
+        function girisYap() {
+            alert("Giriş başarılı!");
+            window.location.href = "site.html"; // Buraya yönlendirmek istediğin sayfanın adını yaz
+        }
+    </script>
+</body>
+</html>
+
